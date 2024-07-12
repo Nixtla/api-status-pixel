@@ -29,3 +29,4 @@ function renderAlertDiv() {
 
 // Call the checkAPIs function when the script loads
 checkAPIs();
+
