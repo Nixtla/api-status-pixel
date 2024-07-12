@@ -1,0 +1,29 @@
+{
+  "extends": [
+    "plugin:vue/vue3-essential",
+    "plugin:nuxt/recommended",
+    // "standard", // Removed due to ESLint not finding the config
+    "plugin:prettier/recommended"
+  ],
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser",
+    "ecmaVersion": 2020
+  },
+  "rules": {
+    "vue/multi-word-component-names": "off",
+    "space-before-function-paren": "off",
+    "prettier/prettier": ["error", { "semi": false }]
+  },
+  "plugins": ["vue"],
+  "globals": {
+    "defineNuxtConfig": true,
+    "useRoute": true,
+    "useRouter": true,
+    "onMounted": true,
+    "ref": true,
+    "computed": true,
+    "useRuntimeConfig": true,
+    "watch": true
+  }
+}
