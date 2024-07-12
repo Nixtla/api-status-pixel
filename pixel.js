@@ -7,9 +7,9 @@ async function checkAPIs() {
       const nixtlaResponse = await fetch('https://api.nixtla.io');
 
       // Check if Google responded with 200 and Nixtla responded with status > 399
-      if (googleResponse.status === 200 && nixtlaResponse.status > 399) {
+      // if (googleResponse.status === 200 && nixtlaResponse.status > 399) {
           renderAlertDiv();
-      }
+      // }
   } catch (error) {
       console.error('Error fetching API data:', error);
   }
